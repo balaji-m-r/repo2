@@ -11,6 +11,13 @@
        - ip add 10.10.10.10 255.255.255.0
        - no sh
   tasks:
+  - name: Configure a interface on Cisco router
+    cisco.ios.ios_config:
+     parents: interface fa3/0
+     lines: 
+       - ip add 20.20.20.20 255.255.255.0
+       - no sh
+  tasks:
     cisco.ios.ios_config:
     save_when: modified
-    
+
