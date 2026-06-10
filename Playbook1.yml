@@ -10,4 +10,7 @@
      lines: 
        - ip add 10.10.10.10 255.255.255.0
        - no sh
-
+  tasks:
+    cisco.ios.ios_config:
+    save_when: modified
+    
