@@ -3,7 +3,7 @@
   gather_facts=no
   connection: network_cli
   tasks:
-  name: Configure a interface on Cisco router
+  - name: Configure a interface on Cisco router
   cisco.ios.ios_config:
   parents: interface fa0/1
   lines: 
